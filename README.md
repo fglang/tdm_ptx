@@ -5,6 +5,8 @@
 <sup>3</sup>Department of Biomedical Magnetic Resonance, Eberhard Karls University Tübingen, Tübingen, Germany \
 <sup>4</sup>MRI Core Facility of the Medical Faculty, University of Tübingen, Otfried-Müller-Straße 51, Tübingen, 72076, Germany 
 
+![Schematic of the proposed multiplexing approach, which includes 8 high-power single pole double throw (SPDT) RF switches that are controlled by the trigger output of the scanner to route 8 transmit (Tx) channels alternately to each row of a double-row 16ch Tx array during the sequence.](tdm_ptx.png)
+
 This repository contains MATLAB code for optimizing **time-division multiplexing parallel transmit (pTx)** pulses.
 Time-division multiplexing allows driving a larger number of transmit elements (e.g. 16) with a smaller number of RF channels (e.g. 8), resulting in improved pTx performance.
 This is enabled on the hardware level by high-power absorptive single pole double throw (SPDT) RF switches based on a set of lumped-element λ/4 transformers and PIN-diodes. These can alternately route 8 RFPAs to each row of a 16-element double-row Tx coil array, controlled by the optical trigger output of the scanner during the sequence.
@@ -64,3 +66,4 @@ If you use this code in your research, please cite:
 
 ## Contact
 Feel free to open an issue or reach out for questions or suggestions!
+
